@@ -95,7 +95,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/shellforge.git
+git clone [https://github.com/yourusername/shellforge.git](https://github.com/Wael-Rd/ShellForge.git)
 cd shellforge
 
 # Run the installer (adds to /usr/local/bin)
