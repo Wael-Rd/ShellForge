@@ -1,4 +1,4 @@
-# ShellForge 🔥
+ # ShellForge 🔥
 
 <div align="center">
 
@@ -355,7 +355,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**ShellForge** - The Ultimate Shell Generation Framework
+**ShellForge** - The Ultimate Shell Generation 
 
 Made with ❤️ for the Security Research Community
 
