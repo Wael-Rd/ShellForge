@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated shells
+shell_*
+*.php
+*.asp
+*.jsp
+*.zip
+*.tar
+*.gz
+*.py
+!shellforge.py
+!install.py
+
+# Test files
+test_*
+temp_*
