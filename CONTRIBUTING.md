@@ -143,7 +143,7 @@ python3 shellforge.py --list-bypasses
 
 ## Questions?
 
-Feel free to open a [Discussion](https://github.com/yourusername/shellforge/discussions) if you have questions!
+Feel free to open a [Discussion](https://github.com/Wael-Rd/shellforge/discussions) if you have questions!
 
 ---
 
