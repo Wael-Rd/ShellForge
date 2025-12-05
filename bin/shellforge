@@ -6,8 +6,10 @@ Entry point for global installation
 import sys
 import os
 
-# Add the package directory to the path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Add the parent directory to path for development mode
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
 
 from shellforge.main import main
 

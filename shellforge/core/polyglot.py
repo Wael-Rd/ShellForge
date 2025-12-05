@@ -1,5 +1,3 @@
-import struct
-
 class PolyglotEngine:
     def __init__(self):
         pass

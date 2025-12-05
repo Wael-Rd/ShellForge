@@ -1,7 +1,16 @@
 # ShellForge Configuration
 
-VERSION = "3.1.0"
-AUTHOR = "ShellForge Team"
+VERSION = "3.3.0"
+AUTHOR = "Wael-Rd"
+
+# Extension aliases (e.g., ps1 -> powershell)
+EXTENSION_ALIASES = {
+    "ps1": "powershell",
+    "py": "python",
+    "sh": "bash",
+    "perl": "pl",
+    "ruby": "rb",
+}
 
 SUPPORTED_EXTENSIONS = [
     # Web
@@ -13,7 +22,7 @@ SUPPORTED_EXTENSIONS = [
     # System
     "c",
     # Polyglot
-    "pdf", "png", "jpg", "xml", "docx",
+    "pdf", "png", "jpg",
     # Rare/Esoteric
     "groovy", "sql", "yaml", "tcl", "awk", "war",
     # Advanced Red Team
@@ -24,4 +33,27 @@ SUPPORTED_EXTENSIONS = [
     "amsi", "sct", "xsl", "installutil"
 ]
 
+# Add aliases to supported extensions for CLI
+SUPPORTED_EXTENSIONS_WITH_ALIASES = SUPPORTED_EXTENSIONS + list(EXTENSION_ALIASES.keys())
+
+# Available bypass techniques
+BYPASS_TECHNIQUES = [
+    "zip_in_zip",      # Nested ZIP archive
+]
+
+# AV/EDR Bypass levels
+AV_BYPASS_LEVELS = [
+    "amsi",            # AMSI bypass only (basic)
+    "full",            # AMSI + ETW bypass (recommended)
+    "max",             # AMSI + ETW + SBL + Anti-debug (aggressive)
+]
+
+# Persistence methods
+PERSISTENCE_METHODS = [
+    "registry",        # HKCU Run key
+    "task",            # Scheduled Task
+    "startup",         # Startup folder LNK
+]
+
 DEFAULT_PORT = 4444
+DEFAULT_HTTP_PORT = 8080
