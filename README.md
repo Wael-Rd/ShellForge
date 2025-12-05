@@ -64,7 +64,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/Wael-Rd/shellforge.git
+git clone https://github.com/Wael-Rd/ShellForge.git
 cd shellforge
 sudo pip3 install -e .
 ```
